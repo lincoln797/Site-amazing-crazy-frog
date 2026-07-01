@@ -46,14 +46,16 @@
 </body>
 
 <script>
-    const botao = document.querySelector("button");
-    botao.forEach(function(botaoClicado){});
+    const botoes = document.querySelector("button");
+    botao.forEach(function(botaoClicado){
+       botao.addEvenListener("click", botaoClicao);
 
     function botaoClicado () {
         console.log("fui clicado");
         let texto = botao.querySelector("span");
         texto.textContent++;
     }
+    });
 </script>
 
 </html>
