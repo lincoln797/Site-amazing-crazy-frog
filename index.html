@@ -46,9 +46,9 @@
 </body>
 
 <script>
-    const botoes = document.querySelector("button");
-    botao.forEach(function(botaoClicado){
-       botao.addEvenListener("click", botaoClicao);
+    const botoes = document.querySelectorAll("button");
+    botao.forEach(function(botao){
+       botao.addEvenListener("click", botaoClicado);
 
     function botaoClicado () {
         console.log("fui clicado");
