@@ -1,6 +1,6 @@
 const botoes = document.querySelectorAll("button");
     botoes.forEach(function(botao){
-       botao.addEvenListener("click", botaoClicado);
+       botao.addEventListener("click", botaoClicado);
 
     function botaoClicado () {
         console.log("fui clicado");
